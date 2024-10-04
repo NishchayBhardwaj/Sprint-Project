@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,78 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.carousel-container{
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 24px;
+  width: 40vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: center;
+}
+
+.carousel-buttons button {
+  margin: 20px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-buttons button.active {
+  background-color: black;
+  color: white;
+}
+
+.carousel-buttons button.inactive {
+  background-color: white;
+  color: black;
+}
+
+.carousel-buttons button.hover {
+  background-color: black;
+  color: white;
+}
+
+.expandable-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.text-1{
+  margin-left: 15px;
+  background-color: red;
+  border-radius: 10px;
+  width: 60px;
+}
+
+.text-2{
+  margin-left: 15px;
+  background-color: blue;
+  border-radius: 10px;
+  width: 70px;
+  height: 25px;
+}
+
+.text-3{
+  margin-left: 15px;
+  background-color: green;
+  border-radius: 10px;
+  width: 60px;
 }
